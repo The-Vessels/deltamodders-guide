@@ -16,4 +16,4 @@ You'll always remember this.
 
 `USINGIMG::SIFSURPISE_SPR.PNGFORMATA();`
 
-[scr_charbox](scr_charbox)
+[scr_charbox](scr_charbox.md)
