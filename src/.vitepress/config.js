@@ -8,6 +8,11 @@ const config = defineConfig({
     vite: {
         configFile: "vite.config.js"
     },
+    markdown: {
+        languageAlias: {
+            gml: "python"
+        },
+    },
 });
 
 const sidebarConfig = {

@@ -1,18 +1,43 @@
 /**
+ * Fonts
+ * -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "8bitOperatorPlus";
+  src: url(/fonts/main.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "8bitOperatorPlus-Mono";
+  src: url(/fonts/main_mono.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SmallRune";
+  src: url(/fonts/small.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**
  * Colors: Solid
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-c-white: #ffffff;
-  --vp-c-black: #000000;
+  --c_white: #ffffff;
+  --c_black: #000000;
 
-  --vp-c-neutral: var(--vp-c-black);
-  --vp-c-neutral-inverse: var(--vp-c-white);
+  --vp-c-neutral: var(--c_black);
+  --vp-c-neutral-inverse: var(--c_white);
 }
 
 .dark {
-  --vp-c-neutral: var(--vp-c-white);
-  --vp-c-neutral-inverse: var(--vp-c-black);
+  --vp-c-neutral: var(--c_white);
+  --vp-c-neutral-inverse: var(--c_black);
 }
 
 /**
@@ -45,7 +70,6 @@
 
 :root {
   --c_aqua: #00ffff;
-  --c_black: #000000;
   --c_blue: #0000ff;
   --c_dkgray: #404040;
   --c_fuchsia: #ff00ff;
@@ -61,7 +85,6 @@
   --c_red: #ff0000;
   --c_silver: #c0c0c0;
   --c_teal: #008080;
-  --c_white: #ffffff;
   --c_yellow: #ffff00;
 
   --vp-c-gray-1: #dddde3;
@@ -152,8 +175,8 @@
 }
 
 .dark {
-  --vp-c-bg: #1b1b1f;
-  --vp-c-bg-alt: #161618;
+  --vp-c-bg: #000;
+  --vp-c-bg-alt: #020202;
   --vp-c-bg-elv: #202127;
   --vp-c-bg-soft: #202127;
 }
@@ -282,11 +305,14 @@
 
 :root {
   --vp-font-family-base:
-    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "8bitOperatorPlus-Mono", "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --vp-font-family-mono:
-    ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono",
-    "Courier New", monospace;
+    "8bitOperatorPlus-Mono", ui-monospace, "Menlo", "Monaco", "Consolas",
+    "Liberation Mono", "Courier New", monospace;
+  --vp-font-family-heading:
+    "SmallRune", "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-optical-sizing: auto;
 }
 
@@ -334,6 +360,10 @@
 
 :root {
   --vp-layout-max-width: 1440px;
+}
+
+body {
+  font-size: 1.25rem;
 }
 
 /**
@@ -406,19 +436,23 @@
   --vp-code-copy-copied-text-content: "已复制";
 }
 
+.lang {
+  font-size: 16px !important;
+}
+
 /**
  * Component: Button
  * -------------------------------------------------------------------------- */
 
 :root {
   --vp-button-brand-border: transparent;
-  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-text: var(--c_white);
   --vp-button-brand-bg: var(--vp-c-brand-3);
   --vp-button-brand-hover-border: transparent;
-  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-text: var(--c_white);
   --vp-button-brand-hover-bg: var(--vp-c-brand-2);
   --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-text: var(--c_white);
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
 
   --vp-button-alt-border: transparent;
@@ -536,6 +570,14 @@
 :root {
   --vp-sidebar-width: 272px;
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
+}
+
+.text {
+  font-size: 1.1rem !important;
+}
+
+.title {
+  font-size: 1.25rem !important;
 }
 
 /**

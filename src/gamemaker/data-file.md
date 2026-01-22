@@ -29,7 +29,7 @@ This means that the file will ALWAYS start with `FORM`, followed by a 32-bit lit
 unsigned integer specifying the filesize minus 8 bytes (because the header is 8 bytes).
 
 # Example code to traverse through the chunks
-```py
+```gml
 import struct
 import os
 
