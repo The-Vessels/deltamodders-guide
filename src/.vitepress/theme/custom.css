@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "8bitOperatorPlus";
-  src: url(/fonts/main.ttf);
+  src: url(/fonts/main.woff);
   font-weight: 400;
   font-style: normal;
 }
@@ -168,10 +168,10 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-c-bg: #ffffff;
-  --vp-c-bg-alt: #f6f6f7;
-  --vp-c-bg-elv: #ffffff;
-  --vp-c-bg-soft: #f6f6f7;
+  --vp-c-bg: var(--c_white);
+  --vp-c-bg-alt: var(--vp-c-gray-3);
+  --vp-c-bg-elv: var(--c_white);
+  --vp-c-bg-soft: var(--vp-c-gray-3);
 }
 
 .dark {
@@ -309,7 +309,7 @@
 
 :root {
   --vp-font-family-base:
-    "8bitOperatorPlus-Mono", "Inter", ui-sans-serif, system-ui, sans-serif,
+    "8bitOperatorPlus", "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --vp-font-family-mono:
     "8bitOperatorPlus-Mono", ui-monospace, "Menlo", "Monaco", "Consolas",
@@ -366,10 +366,6 @@
   --vp-layout-max-width: 1440px;
 }
 
-body {
-  font-size: 1.25rem;
-}
-
 /**
  * Component: Header Anchor
  * -------------------------------------------------------------------------- */
@@ -384,7 +380,7 @@ body {
 
 :root {
   --vp-code-line-height: 1.7;
-  --vp-code-font-size: 0.875em;
+  --vp-code-font-size: 1em;
   --vp-code-color: var(--vp-c-brand-1);
   --vp-code-link-color: var(--vp-c-brand-1);
   --vp-code-link-hover-color: var(--vp-c-brand-2);
@@ -438,10 +434,6 @@ body {
 }
 :lang(zh) {
   --vp-code-copy-copied-text-content: "已复制";
-}
-
-.lang {
-  font-size: 16px !important;
 }
 
 /**
@@ -574,14 +566,6 @@ body {
 :root {
   --vp-sidebar-width: 272px;
   --vp-sidebar-bg-color: var(--vp-c-bg-alt);
-}
-
-.text {
-  font-size: 1.1rem !important;
-}
-
-.title {
-  font-size: 1.25rem !important;
 }
 
 /**
