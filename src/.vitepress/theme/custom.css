@@ -255,7 +255,7 @@
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--c_lime);
+  --vp-c-brand-1: var(--c_green);
   --vp-c-brand-2: var(--vp-c-indigo-2);
   --vp-c-brand-3: var(--vp-c-indigo-3);
   --vp-c-brand-soft: var(--vp-c-indigo-soft);
@@ -297,6 +297,10 @@
   --vp-c-caution-2: var(--vp-c-red-2);
   --vp-c-caution-3: var(--vp-c-red-3);
   --vp-c-caution-soft: var(--vp-c-red-soft);
+}
+
+.dark {
+  --vp-c-brand-1: var(--c_lime);
 }
 
 /**
@@ -542,7 +546,7 @@ body {
 
 :root {
   --vp-nav-height: 64px;
-  --vp-nav-bg-color: var(--vp-c-bg);
+  --vp-nav-bg-color: var(--vp-c-bg-alt);
   --vp-nav-screen-bg-color: var(--vp-c-bg);
   --vp-nav-logo-height: 24px;
 }
