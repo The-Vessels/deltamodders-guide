@@ -410,6 +410,10 @@ body {
   font-size: 1.25rem;
 }
 
+.desc {
+  font-size: 1rem !important;
+}
+
 /**
  * Component: Header Anchor
  * -------------------------------------------------------------------------- */
@@ -597,6 +601,10 @@ body {
 
 .hide-nav .VPSidebar {
   --vp-nav-height: 22px;
+}
+
+.label {
+  font-size: 1rem !important;
 }
 
 /**
